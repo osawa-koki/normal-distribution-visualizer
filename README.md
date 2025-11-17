@@ -2,6 +2,10 @@
 
 😴😴😴 正規分布の可視化ツールです！  
 
+[![ci](https://github.com/osawa-koki/normal-distribution-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/osawa-koki/normal-distribution-visualizer/actions/workflows/ci.yml)
+[![cd](https://github.com/osawa-koki/normal-distribution-visualizer/actions/workflows/cd.yml/badge.svg)](https://github.com/osawa-koki/normal-distribution-visualizer/actions/workflows/cd.yml)
+[![Dependabot Updates](https://github.com/osawa-koki/normal-distribution-visualizer/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/osawa-koki/normal-distribution-visualizer/actions/workflows/dependabot/dependabot-updates)
+
 ## 実行方法
 
 ```shell
