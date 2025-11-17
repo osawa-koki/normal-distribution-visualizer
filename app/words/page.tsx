@@ -76,7 +76,7 @@ const terms: Term[] = [
     title: 'ゴルトンボード（Galton Board）',
     description: (
       <>
-        ゴルトンボード（Galton Board）は、フランシス・ゴルトンが発明した、<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>を視覚的に理解するための教育ツールです。ビーンマシン（Bean Machine）とも呼ばれます。ボールが上から落下し、各段のペグ（釘）に当たるたびにランダムに左右どちらかに落ちます。この過程を繰り返すと、最終的にボールの分布が正規分布に近づきます。<Link href="/words?q=binomial-distribution" style={{ textDecoration: 'none' }}>二項分布</Link>と<Link href="/words?q=central-limit-theorem" style={{ textDecoration: 'none' }}>中心極限定理</Link>を直感的に理解できる優れた教材です。
+        ゴルトンボード（Galton Board）は、フランシス・ゴルトンが発明した、<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>を視覚的に理解するための教育ツールです。ボールが上から落下し、各段のペグ（釘）に当たるたびにランダムに左右どちらかに落ちます。この過程を繰り返すと、最終的にボールの分布が正規分布に近づきます。<Link href="/words?q=binomial-distribution" style={{ textDecoration: 'none' }}>二項分布</Link>と<Link href="/words?q=central-limit-theorem" style={{ textDecoration: 'none' }}>中心極限定理</Link>を直感的に理解できる優れた教材です。
       </>
     )
   },
