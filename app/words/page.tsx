@@ -18,106 +18,128 @@ interface Term {
 
 const terms: Term[] = [
   {
-    id: 'mpt',
-    title: 'MPT（現代ポートフォリオ理論）',
+    id: 'normal-distribution',
+    title: '正規分布（Normal Distribution）',
     description: (
       <>
-        MPT（Modern Portfolio Theory、現代ポートフォリオ理論）は、ハリー・マーコウィッツが1952年に提唱した投資理論です。リスクとリターンのトレードオフを数学的に分析し、効率的なポートフォリオ（資産の組み合わせ）を構築する方法を示します。主要な概念として、分散投資によってリスクを低減できることや、リスク許容度に応じた最適な資産配分が存在することが挙げられます。<Link href="/words?q=efficient-frontier" style={{ textDecoration: 'none' }}>効率的フロンティア</Link>と<Link href="/words?q=tobin-separation" style={{ textDecoration: 'none' }}>トービンの分離定理</Link>は、このMPTの重要な概念です。
+        正規分布（Normal Distribution）は、ガウス分布とも呼ばれ、自然界や社会現象で最も頻繁に現れる確率分布です。平均値を中心に左右対称な釣鐘型（ベル型）の形状を持ち、<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均（μ）</Link>と<Link href="/words?q=standard-deviation" style={{ textDecoration: 'none' }}>標準偏差（σ）</Link>の2つのパラメータで完全に決定されます。身長、テストの点数、測定誤差など、多くの現象が正規分布に従います。<Link href="/words?q=central-limit-theorem" style={{ textDecoration: 'none' }}>中心極限定理</Link>により、多数の独立した確率変数の和は正規分布に近づく性質があります。
       </>
     )
   },
   {
-    id: 'capm',
-    title: 'CAPM（資本資産価格モデル）',
+    id: 'gaussian-distribution',
+    title: 'ガウス分布（Gaussian Distribution）',
     description: (
       <>
-        CAPM（Capital Asset Pricing Model、資本資産価格モデル）は、ウィリアム・シャープらが1960年代に開発した資産価格決定理論です。<Link href="/words?q=mpt" style={{ textDecoration: 'none' }}>MPT</Link>を拡張したもので、リスク資産の期待リターンを理論的に算出します。CAPMでは、すべての投資家が<Link href="/words?q=market-portfolio" style={{ textDecoration: 'none' }}>マーケット・ポートフォリオ</Link>と<Link href="/words?q=risk-free-rate" style={{ textDecoration: 'none' }}>リスクフリー資産</Link>を組み合わせて保有し、<Link href="/words?q=cml" style={{ textDecoration: 'none' }}>資本市場線（CML）</Link>上でポートフォリオを選択すると仮定します。
+        ガウス分布（Gaussian Distribution）は、<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>の別名です。ドイツの数学者カール・フリードリヒ・ガウスにちなんで名付けられました。ガウスは誤差論の研究において、測定誤差がこの分布に従うことを示しました。数学的には、確率密度関数 f(x) = (1/√(2πσ²)) × e^(-(x-μ)²/(2σ²)) で表されます。
       </>
     )
   },
   {
-    id: 'efficient-frontier',
-    title: '効率的フロンティア',
+    id: 'mean',
+    title: '平均（μ: ミュー）',
     description: (
       <>
-        効率的フロンティア（Efficient Frontier）は、同じリスクレベルで最大のリターンを提供する、または同じリターンレベルで最小のリスクを提供するポートフォリオの集合を表す曲線です。<Link href="/words?q=mpt" style={{ textDecoration: 'none' }}>現代ポートフォリオ理論（MPT）</Link>の中心的な概念で、この曲線より左上のポートフォリオは理論上実現不可能です。複数の資産を組み合わせることで、個別資産よりも効率的な（リスク対リターンの比率が良い）ポートフォリオを構築できることを示しています。
+        平均（Mean）は、データの中心的な位置を表す統計量です。<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>においては、分布の中心位置を決定するパラメータで、ギリシャ文字μ（ミュー）で表されます。平均値を変更すると、分布全体が左右に平行移動します。正規分布では、平均=<Link href="/words?q=median" style={{ textDecoration: 'none' }}>中央値</Link>=<Link href="/words?q=mode" style={{ textDecoration: 'none' }}>最頻値</Link>が一致する特徴があります。
       </>
     )
   },
   {
-    id: 'market-portfolio',
-    title: 'マーケット・ポートフォリオ',
+    id: 'standard-deviation',
+    title: '標準偏差（σ: シグマ）',
     description: (
       <>
-        マーケット・ポートフォリオ（Market Portfolio）は、<Link href="/words?q=efficient-frontier" style={{ textDecoration: 'none' }}>効率的フロンティア</Link>上で<Link href="/words?q=sharpe-ratio" style={{ textDecoration: 'none' }}>シャープレシオ</Link>が最大となるポートフォリオです。<Link href="/words?q=capm" style={{ textDecoration: 'none' }}>CAPM</Link>理論では、すべての投資家は個人のリスク許容度に関わらず、同じマーケット・ポートフォリオを保有すべきだとされています。実務上は、世界株式インデックスファンドなどの幅広く分散されたポートフォリオがマーケット・ポートフォリオの近似として用いられます。
+        標準偏差（Standard Deviation）は、データのばらつき（散らばり具合）を表す統計量で、ギリシャ文字σ（シグマ）で表されます。標準偏差が大きいほど、データは<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均</Link>から広く分散し、小さいほど平均の周りに集中します。<Link href="/words?q=variance" style={{ textDecoration: 'none' }}>分散</Link>の平方根として定義され、元のデータと同じ単位を持つため解釈しやすい特徴があります。<Link href="/words?q=68-95-99-rule" style={{ textDecoration: 'none' }}>68-95-99.7ルール</Link>で、データの分布範囲を直感的に理解できます。
       </>
     )
   },
   {
-    id: 'cml',
-    title: '資本市場線（CML）',
+    id: 'variance',
+    title: '分散（Variance）',
     description: (
       <>
-        資本市場線（Capital Market Line、CML）は、<Link href="/words?q=risk-free-rate" style={{ textDecoration: 'none' }}>リスクフリー資産</Link>と<Link href="/words?q=market-portfolio" style={{ textDecoration: 'none' }}>マーケット・ポートフォリオ</Link>を組み合わせることで実現可能なリスク・リターンの組み合わせを示す直線です。<Link href="/words?q=capm" style={{ textDecoration: 'none' }}>CAPM</Link>では、すべての合理的な投資家はこの線上のどこかのポートフォリオを選択すべきだとされます。CML上の任意の点は、リスクフリー資産とマーケット・ポートフォリオの異なる配分比率を表しています。
+        分散（Variance）は、データのばらつきを表す統計量で、各データが<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均</Link>からどれだけ離れているかの二乗の平均値として定義されます。記号σ²で表され、<Link href="/words?q=standard-deviation" style={{ textDecoration: 'none' }}>標準偏差</Link>を二乗した値です。分散が大きいほどデータのばらつきが大きく、小さいほど平均の周りに集中していることを意味します。数学的な扱いが容易なため、統計理論では標準偏差よりも分散が用いられることが多くあります。
       </>
     )
   },
   {
-    id: 'tobin-separation',
-    title: 'トービンの分離定理',
+    id: '68-95-99-rule',
+    title: '68-95-99.7ルール',
     description: (
       <>
-        トービンの分離定理（Tobin&apos;s Separation Theorem）は、ジェームズ・トービンが提唱したポートフォリオ理論の重要な定理です。投資決定は2つのステップに分離できると述べています：（1）最適なリスク資産ポートフォリオ（<Link href="/words?q=market-portfolio" style={{ textDecoration: 'none' }}>マーケット・ポートフォリオ</Link>）を決定する、（2）個人のリスク許容度に応じて、<Link href="/words?q=risk-free-rate" style={{ textDecoration: 'none' }}>リスクフリー資産</Link>とマーケット・ポートフォリオの配分比率を決定する。つまり、リスク選好度が異なる投資家でも、同じマーケット・ポートフォリオを保有し、配分比率だけを変えれば良いということです。
+        68-95-99.7ルール（Empirical Rule）は、<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>において、データがどの範囲に集中するかを示す経験則です。<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均（μ）</Link>±1<Link href="/words?q=standard-deviation" style={{ textDecoration: 'none' }}>標準偏差（σ）</Link>の範囲に約68.27%、μ±2σの範囲に約95.45%、μ±3σの範囲に約99.73%のデータが含まれます。この法則は、データの異常値や外れ値を判断する基準として広く利用されています。
       </>
     )
   },
   {
-    id: 'risk-free-rate',
-    title: 'リスクフリーレート（無リスク利子率）',
+    id: 'galton-board',
+    title: 'ゴルトンボード（Galton Board）',
     description: (
       <>
-        リスクフリーレート（Risk-Free Rate）は、理論上リスクがゼロの資産から得られる利回りのことです。実務上は、自国通貨建ての短期国債の利回りが使用されます（日本の場合は日本国債、米国の場合は米国債）。<Link href="/words?q=capm" style={{ textDecoration: 'none' }}>CAPM</Link>や<Link href="/words?q=sharpe-ratio" style={{ textDecoration: 'none' }}>シャープレシオ</Link>の計算において、超過リターン（リスクプレミアム）を算出するための基準値として使用されます。
+        ゴルトンボード（Galton Board）は、フランシス・ゴルトンが発明した、<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>を視覚的に理解するための教育ツールです。ビーンマシン（Bean Machine）とも呼ばれます。ボールが上から落下し、各段のペグ（釘）に当たるたびにランダムに左右どちらかに落ちます。この過程を繰り返すと、最終的にボールの分布が正規分布に近づきます。<Link href="/words?q=binomial-distribution" style={{ textDecoration: 'none' }}>二項分布</Link>と<Link href="/words?q=central-limit-theorem" style={{ textDecoration: 'none' }}>中心極限定理</Link>を直感的に理解できる優れた教材です。
       </>
     )
   },
   {
-    id: 'expected-return',
-    title: '期待リターン',
-    description: '期待リターン（Expected Return）は、資産やポートフォリオから将来得られると予想される平均的な収益率です。過去のデータや経済予測に基づいて推定されます。リスクが高い資産ほど、一般的に期待リターンも高くなる傾向があります（リスク・リターンのトレードオフ）。このアプリケーションでは、各資産の期待リターンを年率（%）で設定します。'
-  },
-  {
-    id: 'risk',
-    title: 'リスク（標準偏差）',
+    id: 'central-limit-theorem',
+    title: '中心極限定理（Central Limit Theorem）',
     description: (
       <>
-        投資におけるリスク（Risk）は、リターンの不確実性や変動性を指し、通常は標準偏差で測定されます。標準偏差が大きいほど、リターンのばらつきが大きく、投資結果の予測が困難になります。正規分布を仮定すると、約68%の確率で期待リターン±1標準偏差の範囲に実際のリターンが収まります。<Link href="/words?q=mpt" style={{ textDecoration: 'none' }}>MPT</Link>では、複数資産の組み合わせによってポートフォリオ全体のリスクを低減できることが示されています。
+        中心極限定理（Central Limit Theorem）は、統計学における最も重要な定理の一つです。元の分布の形状に関わらず、独立した確率変数の和（または平均）の分布は、サンプルサイズが大きくなるにつれて<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>に近づくという定理です。この定理により、多くの自然現象や社会現象が正規分布に従う理由が説明できます。<Link href="/words?q=galton-board" style={{ textDecoration: 'none' }}>ゴルトンボード</Link>は、この定理を視覚的に示す優れた例です。
       </>
     )
   },
   {
-    id: 'sharpe-ratio',
-    title: 'シャープレシオ',
+    id: 'binomial-distribution',
+    title: '二項分布（Binomial Distribution）',
     description: (
       <>
-        シャープレシオ（Sharpe Ratio）は、リスク1単位あたりの超過リターン（<Link href="/words?q=risk-free-rate" style={{ textDecoration: 'none' }}>リスクフリーレート</Link>を上回るリターン）を示す指標です。計算式は「（期待リターン - リスクフリーレート）/ リスク（標準偏差）」です。シャープレシオが高いほど、リスクに対するリターンが効率的であることを意味します。<Link href="/words?q=market-portfolio" style={{ textDecoration: 'none' }}>マーケット・ポートフォリオ</Link>は、<Link href="/words?q=efficient-frontier" style={{ textDecoration: 'none' }}>効率的フロンティア</Link>上でシャープレシオが最大となる点として定義されます。
+        二項分布（Binomial Distribution）は、成功確率がpの試行をn回繰り返したときの成功回数の分布です。<Link href="/words?q=galton-board" style={{ textDecoration: 'none' }}>ゴルトンボード</Link>では、各ペグで右に落ちる確率が0.5の試行を繰り返すため、ボールの最終位置は二項分布に従います。試行回数nが大きくなると、<Link href="/words?q=central-limit-theorem" style={{ textDecoration: 'none' }}>中心極限定理</Link>により、二項分布は<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>で近似できるようになります。
       </>
     )
   },
   {
-    id: 'correlation',
-    title: '相関係数',
+    id: 'probability-density-function',
+    title: '確率密度関数（PDF）',
     description: (
       <>
-        相関係数（Correlation Coefficient）は、2つの資産の価格変動がどの程度連動するかを示す指標で、-1から1の範囲の値を取ります。1に近いほど正の相関（同じ方向に動く）、-1に近いほど負の相関（逆方向に動く）、0に近いほど無相関（関係がない）を意味します。<Link href="/words?q=mpt" style={{ textDecoration: 'none' }}>MPT</Link>では、相関係数が1未満の資産を組み合わせることで、ポートフォリオ全体のリスクを個別資産よりも低減できることが示されています。このアプリケーションでは、簡略化のため、すべての資産ペアに同じ相関係数を使用しています。
+        確率密度関数（Probability Density Function、PDF）は、連続確率変数がある値を取る相対的な可能性を示す関数です。<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>の確率密度関数は、釣鐘型の曲線を描き、f(x) = (1/√(2πσ²)) × e^(-(x-μ)²/(2σ²)) で表されます。曲線下の面積が確率を表し、全体の面積は1になります。<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均μ</Link>で最大値を取り、そこから離れるにつれて値が小さくなります。
       </>
     )
   },
   {
-    id: 'diversification',
-    title: '分散投資',
+    id: 'median',
+    title: '中央値（Median）',
     description: (
       <>
-        分散投資（Diversification）は、複数の異なる資産に投資することでリスクを低減する投資戦略です。<Link href="/words?q=mpt" style={{ textDecoration: 'none' }}>現代ポートフォリオ理論（MPT）</Link>の核心的な考え方で、相関が完全ではない（<Link href="/words?q=correlation" style={{ textDecoration: 'none' }}>相関係数</Link>が1未満の）資産を組み合わせることで、ポートフォリオ全体のリスクを個別資産の単純平均よりも低く抑えることができます。「すべての卵を一つのかごに盛るな」という格言で表現されます。
+        中央値（Median）は、データを大きさの順に並べたときに中央に位置する値です。データを2等分する位置にあり、外れ値の影響を受けにくい特徴があります。<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>のような対称な分布では、中央値は<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均</Link>と<Link href="/words?q=mode" style={{ textDecoration: 'none' }}>最頻値</Link>に一致します。
+      </>
+    )
+  },
+  {
+    id: 'mode',
+    title: '最頻値（Mode）',
+    description: (
+      <>
+        最頻値（Mode）は、データの中で最も頻繁に現れる値です。<Link href="/words?q=probability-density-function" style={{ textDecoration: 'none' }}>確率密度関数</Link>が最大値を取る点として定義されます。<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>では、最頻値は<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均</Link>と<Link href="/words?q=median" style={{ textDecoration: 'none' }}>中央値</Link>に一致し、分布の中心に位置します。
+      </>
+    )
+  },
+  {
+    id: 'z-score',
+    title: 'Z得点（Z-score）',
+    description: (
+      <>
+        Z得点（Z-score、標準得点）は、あるデータが<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均</Link>からどれだけ離れているかを<Link href="/words?q=standard-deviation" style={{ textDecoration: 'none' }}>標準偏差</Link>の単位で表した値です。Z = (X - μ) / σ で計算されます。Z得点が0なら平均と同じ、正なら平均より大きく、負なら平均より小さいことを意味します。異なる単位や尺度のデータを標準化して比較する際に使用されます。偏差値は、Z得点を平均50、標準偏差10に変換したものです。
+      </>
+    )
+  },
+  {
+    id: 'standard-normal-distribution',
+    title: '標準正規分布',
+    description: (
+      <>
+        標準正規分布（Standard Normal Distribution）は、<Link href="/words?q=mean" style={{ textDecoration: 'none' }}>平均</Link>が0、<Link href="/words?q=standard-deviation" style={{ textDecoration: 'none' }}>標準偏差</Link>が1の<Link href="/words?q=normal-distribution" style={{ textDecoration: 'none' }}>正規分布</Link>です。任意の正規分布は、<Link href="/words?q=z-score" style={{ textDecoration: 'none' }}>Z得点</Link>変換によって標準正規分布に変換できます。統計的検定や確率計算で広く使用され、標準正規分布表（Z表）を用いて確率を求めることができます。
       </>
     )
   }
@@ -150,7 +172,7 @@ export default function WordsPage (): React.JSX.Element {
     <Container className="py-5">
       <h1 className="mb-4">📚 用語集</h1>
       <p className="mb-4">
-        MPT（現代ポートフォリオ理論）とCAPM（資本資産価格モデル）に関連する主要な用語を解説します。
+        正規分布と統計学に関連する主要な用語を解説します。
         用語は相互にリンクされており、クリックすることで関連する用語にジャンプできます。
       </p>
 
