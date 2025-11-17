@@ -16,21 +16,6 @@ const pages: Page[] = [
     name: 'About'
   },
   {
-    emoji: '⚠️',
-    path: '/notes/',
-    name: 'Notes'
-  },
-  {
-    emoji: '📝',
-    path: '/summary/',
-    name: 'Summary'
-  },
-  {
-    emoji: '⚙️',
-    path: '/settings/',
-    name: 'Settings'
-  },
-  {
     emoji: '📊',
     path: '/distribution/',
     name: 'Distribution'
